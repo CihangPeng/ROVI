@@ -4,7 +4,7 @@
 
 ROVI is a high-quality synthetic dataset featuring 1M curated web images with comprehensive image descriptions and bounding box annotations. Using a novel VLM-LLM re-captioning strategy, ROVI exceeds existing detection-centric datasets in image description, quality, and resolution, while containing two orders of magnitude more categories with an open-vocabulary nature. Our approach yields a global prompt inherently linked to instance annotations while capturing secondary visual elements humans typically overlook.
 
-This work is accepted at ICCV 2025. For demonstrative purposes, an instance-grounded T2I generator trained on ROVI achieves superior performance in grounding accuracy, prompt fidelity, and aesthetic quality.
+This work is accepted at ICCV 2025. For demonstrative purposes, an instance-grounded T2I generator based on [GLIGEN](https://github.com/gligen/GLIGEN) trained on ROVI achieves superior performance in grounding accuracy, prompt fidelity, and aesthetic quality.
 
 **Paper:** Coming soon
 

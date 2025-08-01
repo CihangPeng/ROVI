@@ -2,7 +2,7 @@
 
 ## Overview
 
-ROVI is a synthesized dataset featuring 1M curated web images with comprehensive image descriptions and bounding box annotations. Using a novel VLM-LLM re-captioning strategy, ROVI exceeds existing detection-centric datasets in image description, quality, and resolution, while containing two orders of magnitude more categories with an open-vocabulary nature. Our approach yields a global prompt inherently linked to instance annotations while capturing secondary visual elements humans typically overlook.
+ROVI is a high-quality synthetic dataset featuring 1M curated web images with comprehensive image descriptions and bounding box annotations. Using a novel VLM-LLM re-captioning strategy, ROVI exceeds existing detection-centric datasets in image description, quality, and resolution, while containing two orders of magnitude more categories with an open-vocabulary nature. Our approach yields a global prompt inherently linked to instance annotations while capturing secondary visual elements humans typically overlook.
 
 This work is accepted at ICCV 2025. For demonstrative purposes, instance-grounded T2I generators trained on ROVI achieve superior performance in grounding accuracy, prompt fidelity, and aesthetic quality.
 

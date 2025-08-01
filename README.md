@@ -67,7 +67,7 @@ Coming soon...
 
 ## Related Repositories
 
-This project builds upon several key repositories:
+Our pipeline relies solely on open-source models and all third-party code can be run offline with downloaded weights. The key open-source models used in our pipeline include:
 
 - **InternVL-1.5**: [OpenGVLab/InternVL-Chat-V1-5](https://huggingface.co/OpenGVLab/InternVL-Chat-V1-5)
 - **LLaMA-3**: [meta-llama/llama3](https://github.com/meta-llama/llama3)

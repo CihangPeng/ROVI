@@ -10,7 +10,7 @@ This work is accepted at ICCV 2025. For demonstrative purposes, instance-grounde
 
 **Dataset:** [ROVI Dataset on Hugging Face](https://huggingface.co/datasets/CHang/ROVI)
 
-**Demo:** [ROVI Dataset Example Viewer](https://huggingface.co/spaces/CHang/ROVI-Dataset-Example-Viewer) - This demo will fetch a random 1k subset from ROVI val set, and display up to 100 random images with full annotations.
+**Demo:** [ROVI Dataset Example Viewer](https://huggingface.co/spaces/CHang/ROVI-Dataset-Example-Viewer) - This demo will fetch a random 1k subset from ROVI val set, and display up to 100 random images with rich annotations.
 
 ## Dataset Structure
 

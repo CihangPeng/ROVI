@@ -74,7 +74,7 @@ This project builds upon several key repositories:
 - **Qwen2-VL**: [Qwen/Qwen2-VL-7B-Instruct](https://huggingface.co/Qwen/Qwen2-VL-7B-Instruct)
 - **Grounding-DINO**: [IDEA-Research/GroundingDINO](https://github.com/IDEA-Research/GroundingDINO)
 - **YOLO-World**: [AILab-CVC/YOLO-World](https://github.com/AILab-CVC/YOLO-World)
-- **OWLv2**: [Hugging Face OWLv2](https://huggingface.co/docs/transformers/en/model_doc/owlv2)
+- **OWLv2**: [OWLv2 on HuggingFace](https://huggingface.co/docs/transformers/en/model_doc/owlv2)
 - **OV-DINO**: [wanghao9610/OV-DINO](https://github.com/wanghao9610/OV-DINO)
 
 ## License

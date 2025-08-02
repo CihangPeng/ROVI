@@ -1,4 +1,4 @@
-# VLM Verification Stage
+# VLM Cross-Checking Stage
 
 This pipeline stage provides batch object detection verification using [Qwen2-VL-7B-Instruct](https://huggingface.co/Qwen/Qwen2-VL-7B-Instruct) for large-scale bounding box validation. It processes cropped image regions and determines whether detected objects match their predicted labels.
 

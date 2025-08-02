@@ -26,7 +26,7 @@ cd ./resampling
 # Modify settings at the tops of ovd_resample.py and indexed_dataset.py
 
 # Option 1: Run single process
-python ovd_resample.py --divide_num 8 --data_slice_index 0
+python ovd_resample.py --divide_num 1 --data_slice_index 0
 
 # Option 2: Run distributed processing using the launcher, modify run_resampling.sh first
 chmod +x run_resampling.sh

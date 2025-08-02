@@ -65,7 +65,7 @@ All annotation fields (`labels`, `bboxes`, `scores`, `ovd_belongings`) are lists
 
 Our pipeline implements a novel VLM-LLM re-captioning strategy that enables comprehensive object detection across open-vocabulary categories, relying solely on open-source models. The key innovation is pre-detection re-captioning: by invoking VLM-LLM processing before detection, we create accurate and comprehensive object lists that allow broader instance detection using the same Open Vocabulary Detectors (OVDs). This approach also mitigates bias in source dataset text, significantly increasing overall consistency.
 
-![Pipeline Overview](pipeline_illustration.pdf)
+![Pipeline Overview](pipeline_illustration.png)
 
 The pipeline consists of five sequential stages, each building upon the previous outputs:
 

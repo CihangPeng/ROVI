@@ -70,7 +70,7 @@ The pipeline consists of five sequential stages, each building upon the previous
 ### Stage 1: VLM Description ([`vlm_description/`](vlm_description/))
 
 **Purpose**: Generate comprehensive image descriptions using Vision-Language Models  
-**Model**: [InternVL-Chat-V1.5](https://huggingface.co/OpenGVLab/InternVL-Chat-V1-5) (26B parameters)
+**Model**: [InternVL-Chat-V1.5](https://huggingface.co/OpenGVLab/InternVL-Chat-V1-5) (26B parameters)  
 **Process**: Takes curated web images and generates detailed visual descriptions that capture both primary objects and secondary visual elements often overlooked by humans  
 **Output**: VLM-generated captions paired with original web captions  
 **Details**: See [`vlm_description/README.md`](vlm_description/README.md) for setup, usage, and configuration

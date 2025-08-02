@@ -48,6 +48,8 @@ The code expects the following input structure by default:
   - `od` ([OV-DINO](https://github.com/wanghao9610/OV-DINO))
 - **Caption Data**: VLM/LLM generated descriptions in JSON format
 
+**Note**: The resampling method is capable of handling fewer than 4 OVD sources if not all detection results are available.
+
 ### Output Structure
 - **JSON Metadata**: Detection results with sampling information
 - **Annotated Images**: Visualizations with bounding boxes and labels

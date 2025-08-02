@@ -65,7 +65,7 @@ llm_summarization/
 ### 2. Hardware Requirements
 
 - **GPU Memory**: Approximately 16GB+ VRAM per GPU for Llama3-8B
-- **Multi-GPU**: We support distributing processing across multiple GPUs without NVLink
+- **Multi-GPU**: Supports distributed processing across multiple GPUs
 
 ## Data Format
 

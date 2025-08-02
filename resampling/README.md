@@ -3,6 +3,7 @@
 ## Overview
 
 This stage performs intelligent resampling of dense, overlapping detection results from multiple Open Vocabulary Detectors (OVDs) before [VLM cross-checking] (TBD). After OVD detection but before expensive VLM verification, this pipeline addresses the challenge of excessive box coverage by implementing importance-based sampling that compresses noisy results while preserving detection quality.
+
 The core methodology utilizes combined views from different OVDs through voting mechanisms and overlap analysis to determine sampling priorities. By penalizing overlapping boxes, duplicate captions, distance from image center, and small box sizes, the resampling process effectively removes approximately 70% of instances while maintaining comprehensive image coverage. This strategic reduction significantly decreases computational overhead for the subsequent VLM cross-checking stage, transforming hundreds of dense detections into a manageable set of high-priority candidates for final verification.
 
 ## Requirements

@@ -66,7 +66,6 @@ llm_summarization/
 
 - **GPU Memory**: Approximately 16GB+ VRAM per GPU for Llama3-8B
 - **Multi-GPU**: We support distributing processing across multiple GPUs without NVLink
-- **Storage**: Sufficient disk space for output and logs
 
 ## Data Format
 

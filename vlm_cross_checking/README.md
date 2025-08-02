@@ -20,6 +20,9 @@ python download_qwen2vl.py
 
 This will download the model to `./huggingface_model/` directory structure.
 
+**Requirements:**
+- GPU Memory: Minimum 16GB VRAM for 7B model
+
 ### 2. Hardware Requirements
 
 - **GPU Memory**: Minimum 16GB VRAM for the 7B model
@@ -43,7 +46,7 @@ Our mapping files work as follows:
 {
     "image_id_1": "/path/to/directory1/",
     "image_id_2": "/path/to/directory2/",
-    ...
+    "...": "..."
 }
 ```
 
@@ -55,17 +58,17 @@ Our mapping files work as follows:
         "1": "/path/to/ovd_annotation_2.json",
         "2": "/path/to/ovd_annotation_3.json"
     },
-    ...
+    "...": "..."
 }
 ```
 
 3. **OVD annotation files** contain bounding boxes and detected objects:
-```json
+```javascript
 {
     "new_key": "image_identifier",
-    "OV_merged": ["object1", "object2", ...],
-    "bboxes": [[x0, y0, x1, y1], [x0, y0, x1, y1], ...],
-    ...
+    "OV_merged": ["object1", "object2", "..."],
+    "bboxes": [[x0, y0, x1, y1], [x0, y0, x1, y1], "..."],
+    "...": "..."
 }
 ```
 
@@ -146,7 +149,7 @@ vlm_cross_checking/
 
 Verification results are saved as JSON files:
 
-```json
+```javascript
 {
     "new_key": "image_identifier",
     "sub_sample": 0,

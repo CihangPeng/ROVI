@@ -1,6 +1,6 @@
 # LLM Summarization Stage
 
-This pipeline stage provides two-phase attribute processing using Llama3-8B-Instruct [[GitHub](https://github.com/meta-llama/llama3)][[HuggingFace](https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct)] for large-scale image caption processing. It processes VLM-generated captions to extract structured attributes in two phases: initial compound phrase extraction and decomposition into constituent parts.
+This pipeline stage provides two-phase summarization using Llama3-8B-Instruct model [[GitHub](https://github.com/meta-llama/llama3)][[HuggingFace](https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct)] on large-scale image captions. Phase 1 extracts object categories as compound phrases from the combination of a VLM-generated caption and an optional web-sourced image caption. Phase 2 decomposes them into constituent parts.
 
 ## Prerequisites
 
@@ -52,7 +52,7 @@ llm_summarization/
     └── requirements.txt             # Official requirements
 ```
 
-**Important Setup Note:** The `llama3/` folder shown in this repository is for illustration purposes only. You'll need to:
+**Note:** The `llama3/` folder in this repository is a patch over the official Llama3. The setup script above:
 1. Temporarily move our scripts out of the `llama3/` folder
 2. Clone the official Llama3 repository 
 3. Place our modified scripts back into the cloned repository
@@ -60,13 +60,13 @@ llm_summarization/
 **Environment setup:**
 - Follow Llama3 official installation requirements from the cloned repository
 - Required dependencies: `torch`, `fire`, `datasets` (install via `pip install -r llama3/requirements.txt`)
-- Ensure GPU compatibility for distributed processing
+- For distributed processing, ensure every GPU you use is compatibile with your libraries
 
 ### 2. Hardware Requirements
 
-- **GPU Memory**: Requires approximately 16GB+ VRAM per GPU for 8B model
-- **Multi-GPU**: Supports distributed processing across multiple GPUs
-- **Storage**: Sufficient disk space for outputs and logs
+- **GPU Memory**: Approximately 16GB+ VRAM per GPU for Llama3-8B
+- **Multi-GPU**: We support distributing processing across multiple GPUs without NVLink
+- **Storage**: Sufficient disk space for output and logs
 
 ## Data Format
 

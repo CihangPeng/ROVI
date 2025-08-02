@@ -96,7 +96,7 @@ The pipeline consists of five sequential stages, each building upon the previous
 - [OV-DINO](https://github.com/wanghao9610/OV-DINO)
 
 **Process**: Apply multiple OVDs to detect objects from the LLM-generated category lists  
-**Implementation**: These are well-established methods and models, so users can refer to the official repositories for implementation details. We recommend maintaining raw detection results without heavy processing (such as high score thresholds or NMS). For the safety thresholds we used for following stages, please refer to [`./resampling/ovd_resample.py#L70`](resampling/ovd_resample.py#L70)  
+**Implementation**: These are well-established methods and models, so users can refer to the official repositories for implementation details. We recommend maintaining raw detection results without heavy processing (such as high score thresholds or NMS). For the safety thresholds we used for following stages, please refer to [`thresholds in resampling`](resampling/ovd_resample.py#L127)  
 **Output**: Dense detection results from multiple OVD sources with bounding boxes and confidence scores
 
 ### Stage 4: OVD Resampling ([`resampling/`](resampling/))

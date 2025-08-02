@@ -27,7 +27,7 @@ git clone https://huggingface.co/OpenGVLab/InternVL-Chat-V1-5
 
 - **GPU Memory**: Requires approximately 48GB+ VRAM for the 26B model
 - **Multi-GPU**: Supports distributed processing across multiple GPUs
-- **CPU & RAM**: Since high-frequency image preprocessing is involved, require sufficient RAM and CPU cores to achieve better efficiency
+- **CPU & RAM**: Since high-frequency image preprocessing is involved, sufficient RAM and CPU cores are preferred to achieve better efficiency
 
 ## Input Data Format
 

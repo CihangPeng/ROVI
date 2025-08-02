@@ -91,12 +91,6 @@ Breaks down complex phrases into constituent parts (e.g., extracting basic nouns
 
 ## Usage
 
-### Setup
-
-```bash
-cd llm_summarization
-```
-
 ### Configuration
 
 Edit the configuration sections in the shell scripts:

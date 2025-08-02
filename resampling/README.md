@@ -68,7 +68,7 @@ The pipeline implements a 5-stage sampling strategy:
 
 1. **Stage 0-1**: Preprocessing and filtering (score thresholds, area constraints, coordinate transforms)
 2. **Stage 2**: Overlap removal and Non-Maximum Suppression (NMS) per OVD type
-3. **Stage 3**: Equal contribution sampling to balance different OVD sources
+3. **Stage 3**: Adaptive sampling to harmonize detection contributions across OVD sources
 4. **Stage 4**: OVD merge sampling with IoU-based selection and overlap punishment
 5. **Stage 5**: Final selection with comprehensive overlap punishment and multi-replica generation
 

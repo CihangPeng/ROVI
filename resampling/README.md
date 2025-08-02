@@ -2,7 +2,7 @@
 
 ## Overview
 
-This stage performs intelligent resampling of dense, overlapping detection results from multiple Open Vocabulary Detectors (OVDs) before [VLM cross-checking] (TBD). After OVD detection but before expensive VLM verification, this pipeline addresses the challenge of excessive box coverage by implementing importance-based sampling that compresses noisy results while preserving detection quality.
+This stage performs intelligent resampling of dense, overlapping detection results from multiple Open Vocabulary Detectors (OVDs) before [VLM cross-checking](../vlm_cross_checking). After OVD detection but before expensive VLM verification, this pipeline addresses the challenge of excessive box coverage by implementing importance-based sampling that compresses noisy results while preserving detection quality.
 
 The core methodology utilizes combined views from different OVDs through voting mechanisms and overlap analysis to determine sampling priorities. By penalizing overlapping boxes, duplicate captions, distance from image center, and small box sizes, the resampling process effectively removes approximately 70% of instances while maintaining comprehensive image coverage. This strategic reduction significantly decreases computational overhead for the subsequent VLM cross-checking stage, transforming hundreds of dense detections into a manageable set of high-priority candidates for final verification.
 
@@ -42,10 +42,10 @@ The code expects the following input structure by default:
 
 - **Image Data**: Raw image files in configured directories
 - **OVD Results**: JSON files containing detection results from 4 OVD models:
-  - `yw` (YOLO-World)
-  - `ow` (OWLv2) 
-  - `gd` (Grounding-DINO)
-  - `od` (OV-DINO)
+  - `yw` ([YOLO-World](https://github.com/AILab-CVC/YOLO-World))
+  - `ow` ([OWLv2](https://huggingface.co/docs/transformers/en/model_doc/owlv2)) 
+  - `gd` ([Grounding-DINO](https://github.com/IDEA-Research/GroundingDINO))
+  - `od` ([OV-DINO](https://github.com/wanghao9610/OV-DINO))
 - **Caption Data**: VLM/LLM generated descriptions in JSON format
 
 ### Output Structure
@@ -55,7 +55,7 @@ The code expects the following input structure by default:
 
 ## Configuration Settings
 
-### Key Parameters in `get_config()`:
+### Key Parameters in `[get_config()](ovd_resample.py)`:
 
 - **Stage Thresholds**: Control sampling behavior at each stage (e.g., `stage_3_expected_low_threshold`, `stage_4_single_low`)
 - **Scoring Weights**: Balance different factors in selection (e.g., `stage_3_area_weight`, `stage_4_iou_weight`)

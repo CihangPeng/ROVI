@@ -37,7 +37,7 @@ This **stage of the pipeline** uses a **mapping system** to locate images and th
 
 **Our Current Mapping Structure:**
 
-After the resampling stage (see [previous pipeline stages]), we have a structure where **one image is paired with multiple OVD detection results**. This follows the **resampling approach** mentioned in our paper (like peeling layers of an onion) - each image gets several sampled detection results for verification.
+After the resampling stage (see [previous stage: Resampling](../resampling)), we have a structure where **one image is paired with multiple OVD detection results**. This follows the **resampling approach** mentioned in our paper (like peeling layers of an onion) - each image gets several sampled detection results for verification.
 
 Our mapping files work as follows:
 

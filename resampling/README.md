@@ -55,7 +55,7 @@ The code expects the following input structure by default:
 
 ## Configuration Settings
 
-### Key Parameters in [get_config()](ovd_resample.py):
+### Key Parameters in [get_config()](ovd_resample.py#L70):
 
 - **Stage Thresholds**: Control sampling behavior at each stage (e.g., `stage_3_expected_low_threshold`, `stage_4_single_low`)
 - **Scoring Weights**: Balance different factors in selection (e.g., `stage_3_area_weight`, `stage_4_iou_weight`)

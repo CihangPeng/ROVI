@@ -88,9 +88,9 @@ MAX_NUM=9                                     # Max image tiles (1-40)
 TEMPERATURE=0.6                               # Generation temperature
 TEST_CUTDOWN=9999999                          # Limit samples for testing
 
-# Partition Configuration
-SUB_PARTITION_NAME="part1"                    # Dataset partition name
-SOURCE="url_undo_combined"                    # Dataset source name
+# Dataset Configuration
+SUB_PARTITION_NAME="your_partition"           # Dataset partition name
+SOURCE="your_data_source"                     # Dataset source name
 
 # Paths, modified as needed
 MODEL_PATH="./InternVL-Chat-V1-5"            # Model directory

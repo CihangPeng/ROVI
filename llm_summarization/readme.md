@@ -1,6 +1,6 @@
 # LLM Summarization Stage
 
-This pipeline stage provides two-phase attribute processing using Llama3-8B-Instruct for large-scale image caption processing. It processes VLM-generated captions to extract structured attributes in two phases: initial compound phrase extraction and decomposition into constituent parts.
+This pipeline stage provides two-phase attribute processing using Llama3-8B-Instruct [[GitHub](https://github.com/meta-llama/llama3)][[HuggingFace](https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct)] for large-scale image caption processing. It processes VLM-generated captions to extract structured attributes in two phases: initial compound phrase extraction and decomposition into constituent parts.
 
 ## Prerequisites
 

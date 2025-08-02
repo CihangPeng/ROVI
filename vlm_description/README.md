@@ -29,9 +29,9 @@ git clone https://huggingface.co/OpenGVLab/InternVL-Chat-V1-5
 - **Multi-GPU**: Supports distributed processing across multiple GPUs
 - **Storage**: Sufficient disk space for outputs and logs
 
-## Data Format
+## Input Data Format
 
-This code is designed for mass web data processing. At the time of our work, we store images as byte strings and package them into PyArrow format using the HuggingFace `datasets` library.
+This code operates on downloaded images. We expect each image to be encoded in the PNG format as a byte string and then packaged alongside its unique identifier and an optional caption into PyArrow format using the HuggingFace `datasets` library.
 
 **Expected dataset structure:**
 ```python
@@ -43,16 +43,16 @@ This code is designed for mass web data processing. At the time of our work, we 
 }
 ```
 
-**Note on 'caption' field:** This stage does not require existing captions of images for processing. The 'caption' field is used only for creating a stable storage format that preserves original metadata alongside the new VLM-generated descriptions. Consider removing this field if it doesn't meet your data conditions.
+**Note on the 'caption' field:** The VLM description stage does not use image captions on its own. Here we simply read the 'caption' field and store it alongside the VLM-generated descriptions in a format expected by the following LLM summarization stage. Consider removing this field if it doesn't meet your data conditions.
 
-**⚠️ Important:** You may need to modify the dataset-related code in `vlm_batch_processor.py` to suit your own data structure, particularly:
+**⚠️ Important:** You may need to modify the data-loading code in `vlm_batch_processor.py` to suit your own data structure, particularly:
 - The `collate_fn` function
 - Data loading and processing logic
 - Field names and data types
 
 ## Usage
 
-### Setup (assume you've cloned the whole repo and are in the root directory)
+### Setup (assuming you've just cloned the whole repo and start in its root directory)
 
 ```bash
 cd vlm_description
@@ -134,14 +134,15 @@ touch kill3.txt    # Stop GPU 3
 - **Errors**: Check logs for error messages and troubleshooting
 
 ### Resuming
-This stage automatically skips already processed items based on existing caption files. To resume after interruption, simply restart the script.
+
+To resume after interruption, simply restart the script. It automatically skips already processed items based on existing caption files. You do need to delete any corrupted files caused by power loss and stuff.
 
 ## Performance Notes
 
 - **Batch Size**: Adjust `BSZ` based on your GPU memory (recommended: 4-8 for 80GB GPUs)
 - **Image Tiles**: Higher `MAX_NUM` may provide better quality but slower processing (recommended: 6-12)
 - **Multi-GPU**: Processing speed scales approximately linearly with GPU count
-- **I/O**: Ensure fast storage for optimal performance with large datasets
+- **I/O**: Put everything in fast storage for optimal performance with large datasets
 
 ## Troubleshooting
 

@@ -6,7 +6,7 @@ ROVI is a high-quality synthetic dataset featuring 1M curated web images with co
 
 **This work is accepted at ICCV 2025.** For demonstrative purposes, an instance-grounded T2I generator based on [GLIGEN](https://github.com/gligen/GLIGEN) trained on ROVI achieves superior performance in grounding accuracy, prompt fidelity, and aesthetic quality.
 
-**Paper:** [ArXiv](TBD) | [ICCV 2025](https://iccv.thecvf.com/virtual/2025/poster/245)
+**Paper:** [ArXiv](https://arxiv.org/abs/2508.01008) | [ICCV 2025](https://iccv.thecvf.com/virtual/2025/poster/245)
 
 **Dataset:** [ROVI Dataset on Hugging Face](https://huggingface.co/datasets/CHang/ROVI)
 

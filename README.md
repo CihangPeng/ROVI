@@ -32,6 +32,7 @@ Each sample is stored as a dictionary with a 7-digit key and contains the follow
   - `coyo_add`: From [COYO-700M](https://github.com/kakaobrain/coyo-dataset) with aesthetic score 5.75-6.0
   - `laion_pop`: From [LAION-POP](https://laion.ai/blog/laion-pop/) for diversity (high average aesthetic score)
 - **`width`**, **`height`**: Image dimensions
+  - *Note: ROVI is a high-resolution dataset with image sizes ranging from 1024×1024 to 4096×6144, with a maximum height-to-width aspect ratio of 3:1.*
 - **`box_num`**: Number of bounding boxes
 - **`category_num`**: Number of distinct categories in the sample
 

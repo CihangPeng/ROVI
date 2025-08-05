@@ -139,7 +139,7 @@ To resume after interruption, simply restart the script. It automatically skips 
 
 ## Performance Notes
 
-- **Batch Size**: Adjust `BSZ` based on your GPU memory (recommended: 4-8 for 80GB GPUs)
+- **Batch Size**: Adjust `BSZ` based on your GPU memory
 - **Image Tiles**: Higher `MAX_NUM` may provide better quality but slower processing (recommended: 6-12)
 - **Multi-GPU**: Processing speed scales approximately linearly with GPU count
 - **I/O**: Put everything in fast storage for optimal performance with large datasets

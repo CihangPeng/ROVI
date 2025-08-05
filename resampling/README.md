@@ -66,7 +66,7 @@ The code expects the following input structure by default:
 
 ## Resampling Strategy
 
-The pipeline implements a 5-stage sampling strategy:
+The pipeline implements a multi-stage sampling strategy:
 
 1. **Stage 0-1**: Preprocessing and filtering (score thresholds, area constraints, coordinate transforms)
 2. **Stage 2**: Overlap removal and Non-Maximum Suppression (NMS) per OVD type

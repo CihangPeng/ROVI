@@ -78,7 +78,7 @@ Each stage progressively refines the detection set, balancing quality, diversity
 
 ## Reference
 
-For a comprehensive understanding of this resampling methodology, please refer to our [paper](TBD) and supplementary materials (which include detailed examples and ablation studies).
+For a comprehensive understanding of this resampling methodology, please refer to our [paper](https://arxiv.org/abs/2508.01008) and supplementary materials (which include detailed examples and ablation studies).
 
 ## Citation
 

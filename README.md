@@ -12,6 +12,8 @@ ROVI is a high-quality synthetic dataset featuring 1M curated web images with co
 
 **Demo:** [ROVI Dataset Example Viewer](https://huggingface.co/spaces/CHang/ROVI-Dataset-Example-Viewer) - This demo will fetch a random 1k subset from ROVI val set, and display up to 100 random images with rich annotations.
 
+![Pipeline Overview](pipeline_illustration.png)
+
 ## Dataset Structure
 
 The dataset is provided in JSON format with train and validation splits:
@@ -67,8 +69,6 @@ ROVI is published with the aim of maintaining complete source information as pro
 ## Pipeline Stages
 
 Our pipeline implements a novel VLM-LLM re-captioning strategy that enables comprehensive object detection across open-vocabulary categories, relying solely on open-source models. The key innovation is pre-detection re-captioning: by invoking VLM-LLM processing before detection, we create accurate and comprehensive object lists that allow broader instance detection using the same Open Vocabulary Detectors (OVDs). This approach also mitigates bias in source dataset text, significantly increasing overall consistency.
-
-![Pipeline Overview](pipeline_illustration.png)
 
 The pipeline consists of five sequential stages, each building upon the previous outputs:
 

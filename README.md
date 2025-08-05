@@ -27,7 +27,7 @@ Each sample is stored as a dictionary with a 7-digit key and contains the follow
 
 - **`url`**: Image URL
 - **`source`**: Data source with quality filtering
-  - `laion_aes`: From [LAION-5B](https://laion.ai/blog/laion-5b/) with aesthetic score ≥ 6.0
+  - `laion_aes`: From [LAION-5B](https://laion.ai/blog/laion-5b/) with [aesthetic score](https://github.com/christophschuhmann/improved-aesthetic-predictor) ≥ 6.0
   - `coyo_6plus`: From [COYO-700M](https://github.com/kakaobrain/coyo-dataset) with aesthetic score ≥ 6.0  
   - `coyo_add`: From [COYO-700M](https://github.com/kakaobrain/coyo-dataset) with aesthetic score 5.75-6.0
   - `laion_pop`: From [LAION-POP](https://laion.ai/blog/laion-pop/) for diversity (high average aesthetic score)

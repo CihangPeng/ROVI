@@ -158,6 +158,22 @@ For more detailed discussion, please refer to our paper and supplementary materi
 
 We thank the LAION-5B and COYO-700M programs for providing the foundational image datasets, and the authors and contributors of InternVL-1.5, LLaMA-3, Qwen2-VL, Grounding-DINO, YOLO-World, OWLv2, and OV-DINO for their outstanding work and contributions to the open-source community, which made this dataset possible.
 
+## Citation
+
+If you found this work useful, please consider citing:
+
+```bibtex
+@misc{peng2025rovivlmllmrecaptioneddataset,
+      title={ROVI: A VLM-LLM Re-Captioned Dataset for Open-Vocabulary Instance-Grounded Text-to-Image Generation}, 
+      author={Cihang Peng and Qiming Hou and Zhong Ren and Kun Zhou},
+      year={2025},
+      eprint={2508.01008},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2508.01008}
+}
+```
+
 ## Contact
 
 For questions or issues regarding this dataset, please contact: cihangpeng@zju.edu.cn

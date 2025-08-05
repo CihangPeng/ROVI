@@ -61,6 +61,9 @@ All annotation fields (`labels`, `bboxes`, `scores`, `ovd_belongings`) are lists
   - `ow`: [OWLv2](https://huggingface.co/docs/transformers/en/model_doc/owlv2)
   - `od`: [OV-DINO](https://github.com/wanghao9610/OV-DINO)
 
+### Important Note
+ROVI is published with the aim of maintaining complete source information as processed, so you may encounter overlapping bounding boxes on instances. It is highly recommended to apply post-processing when using the dataset for training or evaluation purposes. Consider Non-Maximum Suppression (NMS) or dynamic sampling strategies to reduce spatial overlaps.
+
 ## Pipeline Stages
 
 Our pipeline implements a novel VLM-LLM re-captioning strategy that enables comprehensive object detection across open-vocabulary categories, relying solely on open-source models. The key innovation is pre-detection re-captioning: by invoking VLM-LLM processing before detection, we create accurate and comprehensive object lists that allow broader instance detection using the same Open Vocabulary Detectors (OVDs). This approach also mitigates bias in source dataset text, significantly increasing overall consistency.

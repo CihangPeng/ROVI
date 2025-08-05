@@ -1,6 +1,6 @@
 # VLM Description Stage
 
-This pipeline stage provides batch image captioning using InternVL-Chat-V1.5 (26B parameters) for large-scale web data processing. It supports distributed multi-GPU processing with dynamic image resolution up to 4K.
+This pipeline stage provides batch image captioning using [InternVL-Chat-V1.5](https://huggingface.co/OpenGVLab/InternVL-Chat-V1-5) (26B parameters) for large-scale web data processing. It supports distributed multi-GPU processing with dynamic image resolution up to 4K.
 
 ## Prerequisites
 

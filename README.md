@@ -14,6 +14,8 @@ ROVI is a high-quality synthetic dataset featuring 1M curated web images with co
 
 ![Pipeline Overview](pipeline_illustration.png)
 
+![Pipeline Overview](table_statistics.png)
+
 ## Dataset Structure
 
 The dataset is provided in JSON format with train and validation splits:

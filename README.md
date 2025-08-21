@@ -12,9 +12,9 @@ ROVI is a high-quality synthetic dataset featuring 1M curated web images with co
 
 **Demo:** [ROVI Dataset Example Viewer](https://huggingface.co/spaces/CHang/ROVI-Dataset-Example-Viewer) - This demo will fetch a random 1k subset from ROVI val set, and display up to 100 random images with rich annotations.
 
+![Dataset Example](example_rovi_annotation.png)
 ![Pipeline Overview](pipeline_illustration.png)
-
-![Pipeline Overview](table_statistics.png)
+![Dataset Comparison](table_statistics.png)
 
 ## Dataset Structure
 
